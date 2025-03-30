@@ -11,7 +11,7 @@ interface Screenshot {
 const dataList = ref<Array<Screenshot>>([])
 
 const fetchList = (callback?: () => void) => {
-  fetch("https://qiniu.sukoshi.xyz/screenshot/screenshot.json").then(response => {
+  fetch("https://qn-wzzl.sukoshi.xyz/screenshot/screenshot.json").then(response => {
     if (response.ok) {
       return response.json();
     }
